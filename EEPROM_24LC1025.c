@@ -49,7 +49,7 @@ void EEPROM_Write(unsigned int ad,unsigned int nbr_byte,char msg[]){
 	TWI_Start_Transceiver_With_Data(EEPROM_BUFF_2,buffersize);
 }
 
-void EEPROM_Write_String( char *word, unsigned int ad) {
+void EEPROM_Write_String( const char *word, unsigned int ad) {
 	unsigned int nbr_byte = strlen(word);
 	Usart0_Tx(nbr_byte);
 	//word[2] = 10;
