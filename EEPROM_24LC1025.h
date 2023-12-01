@@ -13,7 +13,7 @@
 
 unsigned char Eeprom_Read(uint16_t address);
 void EEPROM_Write(unsigned int ad,unsigned int nbr_byte,char msg[]);
-void EEPROM_Write_String(  char *word, unsigned int ad);
+void EEPROM_Write_String(  const char *word, unsigned int ad);
 
 
 
